@@ -1,0 +1,172 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: #000000;
+  margin: 0 auto;
+}
+
+.container {
+  height: 24em;
+  width: 18em;
+  border-radius: 0.4em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.login,
+.signup {
+  border-radius: 0.4em;
+  border: solid 1px #bfbfbf;
+  background: #9b9b9b14;
+  backdrop-filter: blur(13px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formLogin {
+  max-width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.login {
+  height: 80%;
+  width: 100%;
+}
+
+.signup {
+  margin-top: 10px;
+  height: 3em;
+  width: 100%;
+}
+
+.circles {
+  height: 153px;
+  width: 153px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circles:nth-child(1) {
+  background: linear-gradient(169deg, #150054, #0000c3, #2992ff, #6affb8, #47ff47);
+}
+
+.circles:nth-child(2) {
+  background: linear-gradient(356deg, #efff00, #ffb204, #ff5e00, #d92e00, #ad0000);
+}
+
+.title {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: monospace;
+  margin: 7px;
+}
+
+.title2,
+.title3 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+a {
+  color: #ffffff;
+}
+
+.title3 {
+  display: flex;
+}
+
+.inputs input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: #ffffff;
+  margin: 0 0.7em;
+}
+
+.inputs {
+  height: 2em;
+  width: 100%;
+  border: solid 1px #bfbfbf;
+  border-radius: 0.4em;
+  display: flex;
+  align-items: center;
+
+}
+
+.inputs label {
+  position: absolute;
+  color: #ffffff;
+  scale: 0.8;
+  transition: 0.2s;
+  font-weight: 900;
+}
+
+input:focus+label {
+  transform: translate(-3px, -32px);
+  scale: 0.9;
+}
+
+.btn,
+.inputs {
+  margin-top: 1.7em;
+}
+
+.btn {
+  width: 100%;
+  background: linear-gradient(94deg, #ff00a5, #ff135f, #ff0023, #eb8900, #ffd600);
+  color: white;
+  border: none;
+}
+
+
+.footer {
+  align-items: center;
+  font-size: 1.3em;
+  font-family: monospace;
+  color: #ffffff;
+  padding: 12px 0px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .circles {
+    height: 8em;
+    width: 8em;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .title3 {
+    margin: 0 auto;
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .footer {
+    font-size: 1em;
+  }
+}
